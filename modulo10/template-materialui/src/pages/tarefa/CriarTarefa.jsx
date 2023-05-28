@@ -20,8 +20,8 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
   const [statusTarefa, setStatusTarefa] = useState('');
   
   useEffect(() => {
-    //Abaixo uma variável é declarada para armazenar o id da tarefa, somando 1 ao maior id existente atualmente no state Tarefas
-    let proximoId = Math.max(...tarefas.map(tarefa => tarefa.idTarefa)) + 1;
+    //Abaixo uma variável é declarada para armazenar o id da tarefa, somando 2 ao maior id existente atualmente no state Tarefas
+    let proximoId = Math.max(...tarefas.map(tarefa => tarefa.idTarefa)) + 2;
     setIdTarefa(proximoId);
   },[]);
 
